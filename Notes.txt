@@ -1,0 +1,115 @@
+BotLocationModifier
+===================
+
+https://hub.sp-tarkov.com/doc/entry/60-mysterious-bot-behavior-variables/
+
+Certain Variables have an upper and lower limit (Found in 
+BotDifficultySettingsClass.ApplyPreset) If it falls outside of these "if" 
+statements it reverts to default
+
+AccuracySpeed
+-------------
+Modifies database/bots/types/<type>.json <type><difficulty>Core.AccuratySpeed
+(note typo in AccuratySpeed is correct)
+
+AccuratySpeed runs from 0.3 for an easy skav to 0.1 for bosses and followers
+
+Smaller is Harder !
+
+DistToActivate
+--------------
+Distance a PMC needs to come within to activate a bots agression.
+
+This runs from 100m on nightime factory to 330m on lighthouse and reserve
+(have you wondered why PMC's seem to focus you from half way across the map ?)
+
+
+DistToPersueAxemanCoef
+----------------------
+
+
+DistToSleep
+-----------
+Distance past which Bots will sleep (although I have read that
+PMC bots and Bosses do not sleep)
+
+
+GainSight
+---------
+Modifies database/bots/types/<type>.json <difficulty>Core.GainSightCoef
+
+GainSight runs from 0.2 for an easy skav to 0.01 for some bosses and followers
+
+KhorovodChance
+--------------
+
+
+
+MagnetPower
+-----------
+
+
+MarksmanAccuratyCoef
+--------------------
+
+
+Scattering
+----------
+
+VisibleDistance
+---------------
+Modifies database/bots/types/<type>.json <type><difficulty>Core.VisibleDistance
+VisibleDistance <= 250 && >= 40
+
+Core VisibleDistance runs from 110m for an easy skav to 392m for sturman 
+
+VisibleDistance Modifie multiplies the Core visible distance
+
+e.g. Core VisibleDistance = 100m Modifier VisibleDistance = 0.5
+
+Resulting VisibleDistance = 100m * 0.5 = 50m
+
+https://www.reddit.com/r/SPTarkov/comments/ylqcv1/comment/ivogoyr/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+
+The location `base.json` files also have modifiers under `BotLocationModifiers`
+(for example VisibleDistance on rezervbase is 1.3 so they spot you from 30% 
+further away). Scavs also have ESP meaning if you target them they'll look in 
+your direction (well, more or less).
+
+When I was testing 0 VisibleDistance and 0 VisibleAngle (which *in theory* 
+shouldn't be affected by multipliers cause any times 0 is 0) there were a 
+few anomalies might worth being careful about:
+
+    Some bots somehow can still beam you down (Shturman's guards killed me 
+    several times from the other side of the woodcutter camp for example)
+
+    Bots can go into revenge mode which also makes them shoot in your 
+    direction (https://dev.sp-tarkov.com/SPT-AKI/Server/src/branch/development/project/assets/configs/bot.json#L174-L177)
+
+    Flashlights seem to also give a huge boost to them being able to see you
+
+Now admittedly this is all anecdotal but even with them being expected to be 
+TOTALLY BLIND (no visibility distance or angle) they were surprisingly accurate 
+sometimes (but it was quite rare.) 
+
+
+// FIXME
+Also Research:
+VisibleAngle <= 180 && >= 50
+/ <= 1.5 && > 0
+
+
+export interface IBotPreset
+{
+    UseThis: boolean;
+    Role: string;
+    BotDifficulty: string;
+    VisibleAngle: number;
+    VisibleDistance: number;
+    ScatteringPerMeter: number;
+    HearingSense: number;
+    SCATTERING_DIST_MODIF: number;
+    MAX_AIMING_UPGRADE_BY_TIME: number;
+    FIRST_CONTACT_ADD_SEC: number;
+    COEF_IF_MOVE: number;
+}

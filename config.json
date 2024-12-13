@@ -1,0 +1,320 @@
+{
+    "debug": true,
+    "winterEvent": true,
+    "modifyBosses": true,
+    "Loot": {
+        "modifyGlobalLootChance": true,
+        "globalLootChanceModifier": 5.0
+    },
+    "Maps": {
+        "bigmap": {
+            "BotNumbers": {
+                "maxBots": 20,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 4,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 1,
+                "DistToSleep": 300,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MagnetPower": 44,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "goons": 15,
+                "reshala": 20,
+                "cultists": 20
+              }
+        },
+        "factory4_day": {
+            "BotNumbers": {
+                "maxBots": 13,
+                "maxPlayers": 0,
+                "maxBotsPerZone": 4,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 0.9,
+                "DistToSleep": 150,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MagnetPower": 15,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "tagilla": 0
+              }
+        },
+        "factory4_night": {
+            "BotNumbers": {
+                "maxBots": 13,
+                "maxPlayers": 0,
+                "maxBotsPerZone": 0,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 0.9,
+                "DistToSleep": 120,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MagnetPower": 15,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "tagilla": 0,
+                "cultists": 0
+              }
+        },
+        "interchange": {
+            "BotNumbers": {
+                "maxBots": 20,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 2,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToPersueAxemanCoef": 1,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "killa": 30
+              }
+        },
+        "laboratory": {
+            "BotNumbers": {
+                "maxBots": 18,
+                "maxPlayers": 14,
+                "maxBotsPerZone": 5,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 1,
+                "DistToSleep": 160,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MagnetPower": 10,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+            },
+            "Bosses": {
+            }
+        },
+        "lighthouse": {
+            "BotNumbers": {
+                "maxBots": 22,
+                "maxPlayers": 7,
+                "maxBotsPerZone": 8,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 1,
+                "DistToSleep": 350,
+                "GainSight": 1.3,
+                "KhorovodChance": 0,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 0.6,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "zryachiy": 100,
+                "goons": 15,
+                "rogues_blockpost": 100,
+                "rogues_roof_containers": 100,
+                "rogues_treatment_rocks": 40,
+                "rogues_treatment_beach": 40,
+                "rogues_island": 0,
+                "rogues_roof_rocks": 80,
+                "rogues_roof_beach": 80,
+                "rogues_helicopter": 10
+              }
+        },
+        "rezervbase": {
+            "BotNumbers": {
+                "maxBots": 40,
+                "maxPlayers": 10,
+                "maxBotsPerZone": 6,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 1,
+                "DistToSleep": 350,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "gluhar": 18
+              }
+        },
+        "sandbox": {
+            "BotNumbers": {
+                "maxBots": 10,
+                "maxPlayers": 10,
+                "maxBotsPerZone": 5,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "GainSight": 1,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+              }
+        },
+        "shoreline": {
+            "BotNumbers": {
+                "maxBots": 22,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 4,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 60,
+                "DistToPersueAxemanCoef": 1,
+                "DistToSleep": 300,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MagnetPower": 40,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+            },
+            "Bosses": {
+                "goons": 0,
+                "sanitar": 15,
+                "cultists_forest": 4,
+                "cultists_gas_station": 4
+            }
+        },
+        "tarkovstreets": {
+            "BotNumbers": {
+                "maxBots": 26,
+                "maxPlayers": 10,
+                "maxBotsPerZone": 5,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "GainSight": 1,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "kolontay": 26,
+                "kaban": 26
+              }
+        }, 
+        "woods": {
+            "BotNumbers": {
+                "maxBots": 20,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 4,
+                "waveMultiplier": 1
+            },
+            "BotLocationModifier": {
+                "AccuracySpeed": 1,
+                "DistToActivate": 265,
+                "DistToPersueAxemanCoef": 1.1,
+                "DistToSleep": 300,
+                "GainSight": 1,
+                "KhorovodChance": 0,
+                "MagnetPower": 44,
+                "MarksmanAccuratyCoef": 1,
+                "Scattering": 1,
+                "VisibleDistance": 1
+              },
+              "Bosses": {
+                "goons": 20,
+                "sturman": 35,
+                "cultists": 15
+              }
+        }
+    },
+    "Airdrops": {
+        "modifyAirdrops": true,
+        "planeAirdropChance": 0.5,
+        "minPlayersCountToSpawnAirdrop": 1
+    },
+    "HideOut": {
+        "fastHideoutConstruction": true,
+        "fastHideoutProduction": true,
+        "generatorSpeedWithoutFuel": 0.07,
+        "generatorFuelFlowRate": 0.0013194444444444,
+        "airFilterUnitFlowRate": 0.0047222222222222,
+        "gpuBoostRate": 0.041225
+    },
+    "BotDifficulty": {
+        "modifyCoreDifficulty": false,
+        "botGroupDistance": 100
+    },
+    "PMCChanges": {
+        "MakePMCChanges": true,
+        "SkavToPMC": 50,
+        "CursedSkavToPMC": 0,
+        "RaiderToPMC": 0,
+        "RogueToPMC": 0,
+        "SniperToPMC": 0,
+        "UsecRatio": 50,
+        "ChanceSameSideHostile": 0,
+        "MaxLevelDelta": 5,
+        "PMCBackPackWeapons": 100,
+        "PMCWeaponsEnhanced": 100,
+        "PMCNamePrefix": 0,
+        "AllPMCNamePrefix": 0
+    },
+    "BotGen": {
+        "botImpossiblePercent": 0,
+        "botHardPercent": 0,
+        "botNormalPercent": 0,
+        "assault_roles": [
+            "assault"
+        ],
+        "bear_roles": [
+            "sptbear"
+        ],
+        "usec_roles": [
+            "sptusec"
+        ],
+        "marksman_roles": [
+            "marksman"
+        ],
+        "sectant_priest_roles": [
+            "sectantpriest"
+        ],
+        "sectant_warrior_roles": [
+            "sectantwarrior"
+        ]
+    }
+}

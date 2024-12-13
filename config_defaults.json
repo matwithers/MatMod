@@ -1,0 +1,162 @@
+{
+    "debug": false,
+    "Loot": {
+        "modifyGlobalLootChance": true,
+        "globalLootChanceModifier": 5.0
+    },
+    "Bosses": {
+        "modifyBosses": true,
+        "factory_day": {
+            "tagilla": 0
+        },
+        "factory_night": {
+            "tagilla": 0,
+            "cultists": 0
+        },
+        "customs": {
+            "goons": 35,
+            "reshala": 35,
+            "cultists": 15
+        },
+        "interchange": {
+            "killa": 18
+        },
+        "shoreline": {
+            "goons": 0,
+            "sanitar": 15,
+            "cultists_forest": 4,
+            "cultists_gas_station": 4
+        },
+        "woods": {
+            "goons": 35,
+            "sturman": 35,
+            "cultists": 15
+        },
+        "reserve": {
+            "gluhar": 18
+        },
+        "lighthouse": {
+            "zryachiy": 100,
+            "goons": 15,
+            "rogues_blockpost": 100,
+            "rogues_roof_containers": 100,
+            "rogues_treatment_rocks": 40,
+            "rogues_treatment_beach": 40,
+            "rogues_island": 0,
+            "rogues_roof_rocks": 80,
+            "rogues_roof_beach": 80,
+            "rogues_helicopter": 10
+        },
+        "streets": {
+            "kaban": 0,
+            "killa": 0
+        }
+    },
+    "Airdrops": {
+        "modifyAirdrops": true,
+        "planeAirdropChance": 0.5,
+        "minPlayersCountToSpawnAirdrop": 1
+    },
+    "HideOut": {
+        "fastHideoutConstruction": true,
+        "fastHideoutProduction": true,
+        "generatorSpeedWithoutFuel": 0.07,
+        "generatorFuelFlowRate": 0.0013194444444444,
+        "airFilterUnitFlowRate": 0.0047222222222222,
+        "gpuBoostRate": 0.041225
+    },
+    "BotDifficulty": {
+        "modifyCoreDifficulty": false,
+        "botGroupDistance": 100
+    },
+    "PMCChanges": {
+        "MakePMCChanges": true,
+        "SkavToPMC": 50,
+        "CursedSkavToPMC": 0,
+        "RaiderToPMC": 0,
+        "RogueToPMC": 0,
+        "SniperToPMC": 0,
+        "UsecRatio": 50,
+        "ChanceSameSideHostile": 0,
+        "MaxLevelDelta": 5,
+        "PMCBackPackWeapons": 100,
+        "PMCWeaponsEnhanced": 100,
+        "PMCNamePrefix": 0,
+        "AllPMCNamePrefix": 0
+    },
+    "BotGen": {
+        "botImpossiblePercent": 0,
+        "botHardPercent": 0,
+        "botNormalPercent": 0,
+        "assault_roles": [
+            "assault"
+        ],
+        "bear_roles": [
+            "sptbear"
+        ],
+        "usec_roles": [
+            "sptusec"
+        ],
+        "marksman_roles": [
+            "marksman"
+        ],
+        "sectant_priest_roles": [
+            "sectantpriest"
+        ],
+        "sectant_warrior_roles": [
+            "sectantwarrior"
+        ],
+        "locations": {
+            "factory_day": {
+                "maxBots": 13,
+                "maxPlayers": 0,
+                "maxBotsPerZone": 4
+            },
+            "factory_night": {
+                "maxBots": 13,
+                "maxPlayers": 0,
+                "maxBotsPerZone": 0
+            },
+            "customs": {
+                "maxBots": 20,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 4
+            },
+            "interchange": {
+                "maxBots": 20,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 2
+            },
+            "shoreline": {
+                "maxBots": 22,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 4
+            },
+            "woods": {
+                "maxBots": 20,
+                "maxPlayers": 9,
+                "maxBotsPerZone": 4
+            },
+            "reserve": {
+                "maxBots": 20,
+                "maxPlayers": 7,
+                "maxBotsPerZone": 4
+            },
+            "lighthouse": {
+                "maxBots": 22,
+                "maxPlayers": 7,
+                "maxBotsPerZone": 8
+            },
+            "streets": {
+                "maxBots": 26,
+                "maxPlayers": 10,
+                "maxBotsPerZone": 5
+            },
+            "laboratory": {
+                "maxBots": 18,
+                "maxPlayers": 14,
+                "maxBotsPerZone": 5
+            }
+        }
+    }
+}
